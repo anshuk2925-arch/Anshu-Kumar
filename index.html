@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Saanvish Journey — a quiet journal of two names, countless memories, and a story still being written.">
+  <title>The Saanvish Journey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="#home">SAANVISH</a>
+    <nav aria-label="Main navigation">
+      <a href="#journey">Journey</a>
+      <a href="#chapters">Chapters</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="menu" aria-label="Menu">☰</button>
+  </header>
+
+  <main id="home">
+
+    <section class="hero">
+      <p class="eyebrow">A JOURNAL OF US · 14.09.2025 — ∞</p>
+      <h1>The <em>Saanvish</em> Journey.</h1>
+      <p class="intro">
+        Two names. One unexpected story. A collection of little moments,
+        quiet feelings, conversations, memories, and everything that made
+        the journey worth remembering.
+      </p>
+      <a class="button" href="#journey">Begin the journey ↓</a>
+    </section>
+
+    <section class="quote" aria-label="Featured quote">
+      <p>“Some stories are not written to be finished. They are written to be remembered.”</p>
+    </section>
+
+    <section class="collection" id="journey">
+      <div class="section-head">
+        <span>01</span>
+        <h2>The beginning</h2>
+      </div>
+
+      <article class="feature">
+        <p class="tag">14 SEPTEMBER 2025</p>
+        <h3>When Anshu met Sadhvi.</h3>
+        <p>
+          It started with a conversation, but somehow became much more.
+          One ordinary day quietly became the first page of a story neither
+          of us knew we were beginning.
+        </p>
+        <a href="#chapters">Read the chapters →</a>
+      </article>
+    </section>
+
+    <section class="collection" id="chapters">
+      <div class="section-head">
+        <span>02</span>
+        <h2>Little chapters</h2>
+      </div>
+
+      <div class="cards">
+        <article>
+          <span>CHAPTER I</span>
+          <h3>The first page</h3>
+          <p>
+            The day a simple connection became something worth holding onto.
+            Every story has a beginning. This was ours.
+          </p>
+        </article>
+
+        <article>
+          <span>CHAPTER II</span>
+          <h3>The little things</h3>
+          <p>
+            The conversations, jokes, silences, memories and tiny moments
+            that slowly gave the journey its meaning.
+          </p>
+        </article>
+
+        <article>
+          <span>CHAPTER III</span>
+          <h3>One year</h3>
+          <p>
+            Twelve months of memories — a reminder that time does not only
+            pass. Sometimes, it becomes part of a story.
+          </p>
+        </article>
+      </div>
+
+      <article class="story">
+        <div>
+          <p class="tag">A NOTE TO REMEMBER</p>
+          <h3>Not every beautiful thing needs a perfect explanation.</h3>
+        </div>
+        <p>
+          Some people enter our lives quietly and leave fingerprints on
+          everything that follows. Saanvish is a name for those moments —
+          the ones worth keeping somewhere safe, even when the world gets loud.
+        </p>
+      </article>
+    </section>
+
+    <section class="about" id="about">
+      <p class="eyebrow">03 · THE NAME</p>
+      <h2>Saanvish is more than a name. It is a place for the memories.</h2>
+      <p>
+        A private little corner of the internet for a journey shared by
+        Anshu and Sadhvi — built from dates, words, photographs, letters,
+        dreams and the ordinary moments that became extraordinary simply
+        because they were ours.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>THE SAANVISH JOURNEY</p>
+    <span>Made with memories · 2025 — ∞</span>
+  </footer>
+
+  <script>
+    // Smooth mobile navigation
+    document.querySelector('.menu').addEventListener('click', () => {
+      const nav = document.querySelector('.nav nav');
+      const visible = getComputedStyle(nav).display !== 'none';
+      nav.style.display = visible ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.position = 'absolute';
+      nav.style.right = '6vw';
+      nav.style.top = '70px';
+      nav.style.padding = '18px';
+      nav.style.background = 'var(--paper)';
+      nav.style.border = '1px solid var(--line)';
+    });
+  </script>
+
+</body>
+</html>
